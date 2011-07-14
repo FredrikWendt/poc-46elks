@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Example page using 46elks' SMS interface</title>
+        <link rel="stylesheet" href="index.css" type="text/css" media="all" />
+        <!-- global
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/themes/smoothness/jquery-ui.css" type="text/css" media="all" />
+        --><!-- localhost -->
+        <link rel="stylesheet" href="http://localhost/libs/jquery/ui/css/smoothness/jquery-ui-1.8.14.custom.css" />
+    </head>
+    <body>
+        <div id='container' class='ui-widget'>
+            <div id='head'>
+                <h1>46Elks client</h1>
+                <h2>An example with XSS proxy in PHP</h2>
+            </div>
+            <div id='main' class='ui-widget-body'>
+                <div id='screen-credentials'>
+                    <p align='center'>
+                        Enter credentials
+                    </p>
+                    <div>
+                        <label for="username">
+                            Username
+                        </label>
+                        <input name='username' id='username' value="" />
+                    </div>
+                    <div>
+                        <label for="password">
+                            Password
+                        </label>
+                        <input name='password' id='password' type='password' value="" />
+                    </div>
+                    <div class='actions'>
+                        <button id='login'>
+                            Login
+                        </button>
+                    </div>
+                </div>
+                <div id='tabs' style="display: none;">
+                    <ul>
+                        <li>
+                            <a href='#screen-numbers'>Numbers</a>
+                        </li>
+                        <li>
+                            <a href='#screen-send'>SMS</a>
+                        </li>
+                    </ul>
+                    <div id='screen-numbers'>
+                        <ul id='number_list'>
+                        </ul>
+                    	<div class='actions'>
+                        <button id='numbers-reload'>
+                            Reload
+                        </button>
+                        <button id='numbers-add'>
+                            Add
+                        </button>
+                    		
+                    	</div>
+                    </div>
+                    <div id='screen-send'>
+                        <div>
+                            <label for='from'>
+                                From
+                            </label>
+                            <input name='from' id='from' />
+                        </div>
+                        <div>
+                            <label for='to'>
+                                To
+                            </label>
+                            <input name='to' id='to' value='+46702778511' />
+                        </div>
+                        <div>
+                            <label for='message'>
+                                Message
+                            </label>
+                            <input name='message' id='message' value='Testmeddelande 01'/>
+                        </div>
+                        <button id='send'>
+                            Send
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id='foot'>
+                Quick hack by <a href="http://www.freelancer.com/users/2575617.html">FredrikWendt</a>.
+            </div>
+        </div>
+        <!--
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
+        </script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js">
+        </script>
+        <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js">
+        </script>
+        -->
+        <!-- localhost -->
+        <script src="http://localhost/libs/jquery/ui/js/jquery-1.5.1.min.js">
+        </script>
+        <script src="http://localhost/libs/jquery/ui/js/jquery-ui-1.8.14.custom.min.js">
+        </script>
+        <script src="http://localhost/libs/jquery/jquery.tmpl.min.js">
+        </script>
+        <script src="index.js">
+        </script>
+    </body>
+</html>

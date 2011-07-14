@@ -1,0 +1,86 @@
+body {
+    background: #777;
+    margin: 48px;
+}
+#container {
+    width: 900px;
+    margin: 0 auto;
+    -moz-box-shadow: 0px 0px 12px #222;
+    -webkit-box-shadow: 0px 0px 12px #222;
+    box-shadow: 0px 0px 12px #222;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+
+#foot {
+    padding: 6px;
+    text-align: center;
+    font-size: 90%;
+    background: #555;
+    color: #aaa;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+	border-top: 1px solid #777;
+}
+
+#head {
+    background-color: #0089c8;
+    background: url(http://www.freelancer.com/images/internal.jpg);
+    font-family: NeoSansRegular, Arial, Sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 8px #444;
+    height: 84px;
+    padding: 12px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+#head h1, #head h2 {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    background: #eee;
+    color: #111;
+    padding: 18px;
+	border-top: 1px solid #777;
+}
+
+label {
+    display: inline-block;
+    width: 300px !important;
+    height: 36px !important;
+    text-align: right;
+}
+
+.actions {
+	text-align: center;
+}
+
+input {
+    border: 1px solid #666;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    padding: 1px 4px;
+    margin: 6px;
+}
+
+a {
+    color: #0073EA;
+}
+
+#screen-credentials input {
+	width: 36ex;
+}
